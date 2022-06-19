@@ -1,0 +1,148 @@
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5rem;
+}
+
+section:nth-child(1) {
+    grid-column: span 2;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 1rem;
+}
+
+section:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 20rem;
+}
+
+section:nth-child(3) {
+    grid-row: 2;
+    grid-column: 2;
+    margin-right: 20rem;
+}
+
+.SectionOne {
+    background-color: white;
+    padding-bottom: 25px;
+
+}
+
+.SectionOne h1 {
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+
+.SectionOne h2 {
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+
+.SectionOne p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sectionTwoLeft {
+    background-color: hsl(179, 62%, 43%);
+    padding: 1rem;
+}
+
+.sectionTwoLeft h3 {
+    font-weight: 700;
+    color: white;
+}
+
+.sectionTwoLeft .dollar span {
+    color: hsl(204, 43%, 93%);
+    font-size: 20px;
+}
+
+.sectionTwoLeft .dollar p {
+    margin-top: 2rem;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+.sectionTwoLeft p {
+    color: hsl(204, 43%, 93%);
+    font-size: 20px;
+    margin-top: -1rem;
+}
+
+.sectionTwoLeft button {
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 290px;
+    height: 50px;
+}
+
+.sectionTwoRight {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    padding: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 6.5rem;
+}
+
+.sectionTwoRight h1 {
+    font-weight: 700;
+    color: white;
+}
+
+.sectionTwoRight span {
+    font-size: 20px;
+    opacity: 0.6;
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 1rem;
+    }
+
+    section:nth-child(1) {
+        grid-column: 1;
+        grid-column: 1;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 0rem;
+    }
+
+    section:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: 0rem;
+    }
+
+    section:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+        margin-right: 0rem;
+    }
+
+}
